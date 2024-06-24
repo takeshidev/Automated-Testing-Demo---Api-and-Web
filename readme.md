@@ -1,1 +1,1 @@
-API Automation Testing demo using testcafe and chai
+API Automation Testing demo using WebDriverIO and chai
