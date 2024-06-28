@@ -1,5 +1,5 @@
 {
-  "name": "API-Testing-Chai-Demo",
+  "name": "Automated Testing Demo - Api and Web",
   "scripts": {
     "wdio": "npx wdio run wdio.conf.ts"
   },
