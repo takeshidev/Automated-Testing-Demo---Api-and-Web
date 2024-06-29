@@ -1,21 +1,23 @@
 {
   "name": "Automated Testing Demo - Api and Web",
   "scripts": {
-    "wdio": "npx wdio run wdio.conf.ts"
+    "wdio": "npx wdio run wdio.conf.ts",
+    "wdio-api": "npx wdio run wdio.conf.ts --spec api",
+    "wdio-web": "npx wdio run wdio.conf.ts --spec web"
   },
   "devDependencies": {
-    "axios": "^1.7.2",
     "@wdio/allure-reporter": "^8.39.0",
     "@wdio/cli": "^8.39.0",
     "@wdio/local-runner": "^8.39.0",
     "@wdio/mocha-framework": "^8.39.0",
+    "@wdio/shared-store-service": "^8.39.0",
     "@wdio/spec-reporter": "^8.39.0",
+    "axios": "^1.7.2",
     "chai": "^5.1.1",
     "chai-http": "^5.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.2",
     "wdio": "^6.0.1",
     "wdio-wait-for": "^3.0.11"
-  },
-  "dependencies": {}
+  }
 }
