@@ -1,11 +1,26 @@
 import { expect } from "@wdio/globals";
 import { MainOperations } from "../business-operations/api/main.operations";
 
-let mainApiOperations = new MainOperations();
+const mainApiOperations = new MainOperations();
 
-describe("API testing - Pokemon", () => {
-  it("[TK-001]Get pokemon by its name", async function () {
-    let response = await mainApiOperations.getPokemon("charizard");
-    await expect(response.status).toBe(200);
+describe("API testing", () => {
+  let response;
+
+  beforeEach(async () => {
+    response = null;
+  });
+
+  it("[TK-001] Login succesfully", async () => {
+    response = await mainApiOperations.login("eve.holt@reqres.in", "12345");
+    await expect(response!.status).toBe(200);
+  });
+
+  it("[TK-002]Get user list using 'page' parameter", async () => {
+    response = await mainApiOperations.login("lindsay.ferguson@reqres.in", "12345");
+    await expect(response!.status).toBe(200);
+
+    response = await mainApiOperations.getUsersList({ page: "2" });
+    await expect(response!.status).toBe(200);
+    await expect(response!.data.page).toBe(2);
   });
 });
