@@ -13,8 +13,6 @@
     "@wdio/shared-store-service": "^8.39.0",
     "@wdio/spec-reporter": "^8.39.0",
     "axios": "^1.7.2",
-    "chai": "^5.1.1",
-    "chai-http": "^5.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.2",
     "wdio": "^6.0.1",
