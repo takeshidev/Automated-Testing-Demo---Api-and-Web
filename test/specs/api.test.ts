@@ -15,7 +15,7 @@ describe("API testing", () => {
     await expect(response!.status).toBe(200);
   });
 
-  it("[TK-002]Get user list using 'page' parameter", async () => {
+  it("[TK-002] Get user list using 'page' parameter", async () => {
     response = await mainApiOperations.login("lindsay.ferguson@reqres.in", "12345");
     await expect(response!.status).toBe(200);
 
