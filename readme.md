@@ -1,8 +1,26 @@
-Automated Testing Demo - Api and Web using WebDriverIO and Axios
+# 🪲 Automated Testing Demo - Api and Web using WebDriverIO 🕸
 
 - API testing
-  Schema validation
 
 - Web testing
-  A11Y
-  Crossbrowsing
+
+
+## 🗂 Dependencies
+- WDIO
+- TypeScript
+- Chai assertion library
+- Axios http client
+- Allure reporter
+
+## 📋 Instructions
+- Clone the repository
+- Run `npm install` to install dependencies
+- Run `npm run wdio` to run all tests
+- To see the report run `npm run generate-report` and then `npm run open-report`
+
+## 🖼 Report screenshots
+![image](https://github.com/user-attachments/assets/d2741429-5287-4206-a7d8-ae8389b98b73)
+
+## ❤️ Thanks to
+- https://reqres.in/
+- https://www.demoblaze.com/
