@@ -10,12 +10,12 @@ describe("API testing", () => {
     response = null;
   });
 
-  it("[TK-001] Login succesfully", async () => {
+  it("[API-001] Login succesfully", async () => {
     response = await mainApiOperations.login("eve.holt@reqres.in", "12345");
     await expect(response!.status).toBe(200);
   });
 
-  it("[TK-002] Get user list using 'page' parameter", async () => {
+  it("[API-002] Get user list using 'page' parameter", async () => {
     response = await mainApiOperations.login("lindsay.ferguson@reqres.in", "12345");
     await expect(response!.status).toBe(200);
 
