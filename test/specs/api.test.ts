@@ -3,7 +3,7 @@ import { MainOperations } from "../business-operations/api/main.operations";
 
 const mainApiOperations = new MainOperations();
 
-describe("API testing", () => {
+describe("[API testing] reqres.in", () => {
   let response;
 
   beforeEach(async () => {
