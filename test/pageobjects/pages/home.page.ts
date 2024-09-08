@@ -1,9 +1,9 @@
 import { $ } from "@wdio/globals";
 import Page from "./page";
+import HeaderComp from "../components/header.comp";
 
-/**
- * sub page containing specific selectors and methods for a specific page
- */
+const headerComp = HeaderComp;
+
 class HomePage extends Page {
   // Selectors
   public get phones() {
@@ -26,10 +26,25 @@ class HomePage extends Page {
     return $("#next2");
   }
 
-  public get productsTitle() {
-    return $$(".card .card-title");
+  public get products() {
+    return $$(".card");
   }
 
+  public productsTitle(item: number) {
+    return this.products[item].$(".card-title");
+  }
+
+  public productsPrice(item: number) {
+    return this.products[item].$("h5");
+  }
+
+  public productsDescription(item: number) {
+    return this.products[item].$(".card-text");
+  }
+
+  public get header() {
+    return headerComp;
+  }
   // Methods
   public async clickPhones() {
     await this.phones.click();
