@@ -3,3 +3,4 @@ allure-results
 allure-report
 *.code-workspace
 package-lock.json
+.vscode
